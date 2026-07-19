@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-19T14:19:55 IST" name="Suite" finished-at="2026-07-19T14:19:55 IST" duration-ms="176">
+    <groups>
+      <group name="parameter">
+        <method signature="ParameterExample.launchApplication(java.lang.String,java.lang.String)[pri:0, instance:Parameterization.ParameterExample@7dcf94f8]" name="launchApplication" class="Parameterization.ParameterExample"/>
+        <method signature="ParameterExample.launchApplication(java.lang.String,java.lang.String)[pri:0, instance:Parameterization.ParameterExample@6f4a47c7]" name="launchApplication" class="Parameterization.ParameterExample"/>
+      </group> <!-- parameter -->
+    </groups>
+    <test started-at="2026-07-19T14:19:55 IST" name="ChromeTest" finished-at="2026-07-19T14:19:55 IST" duration-ms="109">
+      <class name="Parameterization.ParameterExample">
+        <test-method signature="launchApplication(java.lang.String,java.lang.String)[pri:0, instance:Parameterization.ParameterExample@7dcf94f8]" started-at="2026-07-19T14:19:55 IST" name="launchApplication" finished-at="2026-07-19T14:19:55 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+      </class> <!-- Parameterization.ParameterExample -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2026-07-19T14:19:55 IST" name="EdgeTest" finished-at="2026-07-19T14:19:55 IST" duration-ms="6">
+      <class name="Parameterization.ParameterExample">
+        <test-method signature="launchApplication(java.lang.String,java.lang.String)[pri:0, instance:Parameterization.ParameterExample@6f4a47c7]" started-at="2026-07-19T14:19:55 IST" name="launchApplication" finished-at="2026-07-19T14:19:55 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Microsoft Edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+      </class> <!-- Parameterization.ParameterExample -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
+</testng-results>

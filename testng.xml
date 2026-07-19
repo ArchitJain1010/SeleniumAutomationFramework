@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="2">
+  <test thread-count="5" name="ChromeTest">
+  
+  <parameter name="browser" value="Chrome"/>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com"/>
+  <groups>
+  <run>
+  <include name="parameter"></include>
+  </run>
+  </groups>
+
+    <classes>
+      <class name="myproject.LoginTestNG"/>
+      <class name="myproject.TestMethod2"/>
+         <class name="Parameterization.ParameterExample"/>
+            <class name="Parameterization.DataProviderExample"/>
+    </classes>
+     
+  </test> <!-- Test -->
+  <test name="EdgeTest">
+  <parameter name="browser" value="Microsoft Edge"></parameter>
+        <parameter name="url" value="https://www.google.com"/>
+  <groups>
+  <run>
+  <include name="parameter"></include>
+  </run>
+  </groups>
+  <classes>
+            <class name="Parameterization.ParameterExample"/>
+        </classes>
+
+  </test>
+</suite> <!-- Suite -->
